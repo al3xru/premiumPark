@@ -8,6 +8,6 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 _data/output.json
-
+site.zip
 # End of https://www.gitignore.io/api/jekyll
 
