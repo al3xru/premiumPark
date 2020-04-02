@@ -1,0 +1,38 @@
+<header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-12 text-center">
+		<!-- Site name here -->
+		<a class="blog-header-logo text-dark" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+      </div>
+    </div>
+      <div class="col-12 text-center align-items-center"><br/>
+        <a href="tel:+74951470100"> +7 495 147 01 00</a>
+      </div>
+  </header>
+
+    {%- assign default_paths = site.pages | sort: "order" | map: "path" -%}
+    {%- assign page_paths = site.header_pages | default: default_paths -%}
+    {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+    {%- if titles_size > 0 -%}
+  <div class="nav-scroller py-1 mb-2">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Меню</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+	  {%- for path in page_paths -%}
+	  	{%- assign my_page = site.pages | where: "path", path | first -%}
+		{%- if my_page.title -%}
+      <a class="nav-item nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+		{%- endif -%}
+		{%- endfor -%}
+		{%- endif -%}
+    </div>
+  </div>
+</nav>
+    <nav class="nav d-flex justify-content-between">
+      
+    </nav>
+  </div>
