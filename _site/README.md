@@ -7,7 +7,7 @@ I think... And I have an Idea: convert xlsx file to csv, then
 install csvtojson (from npm) and make a command 
 `csvtojson data.csv > output.csv --delimiter=';'`
 and congratulations =)
-
+- added Makefile with arc method
 
 [ToDo:]  
 - [ ] make all sections  
