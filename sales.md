@@ -18,10 +18,10 @@ order: 0
     </tr>
   </thead>
   <tbody>
-{% for sector_hash in site.data.sectors %}
-{% assign sector = sector_hash[1] %}
+{% for sector_hash in site.data.output %}
+{% assign sector = sector_hash %}
     <tr>
-      <th scope="row">{{ sector.number }}</th>
+      <th scope="row">{{ sector.num }}</th>
       <td>{{ sector.area }}</td>
       <td>{{ sector.price }} ₽</td>
       <td><button type="button" class="btn btn-sm btn-secondary">Посмотреть на карте</button>&nbsp;<button type="button" class="btn btn-primary btn-sm">Забронировать</button></td>
