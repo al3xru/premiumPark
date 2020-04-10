@@ -9,5 +9,6 @@ _site/
 .jekyll-metadata
 _data/output.json
 site.zip
+*.backup.html
 # End of https://www.gitignore.io/api/jekyll
 

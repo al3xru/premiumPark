@@ -1,17 +1,10 @@
 title: "ПремиумПарк.рф"
+url: https://премиумпарк.рф
 author:
-  name: GitHub User
-  email: your-email@domain.com
+  name: al3xru
+  email: alex@zhukalin.ru
 description: > # this means to ignore newlines until "show_excerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-
-price:
-        forest: 34000
-        center: 24000
-        noroad: 20000
-
+  Коттеджный посёлок ПремиумПарк, лучший выбор для Вашего дома !
 show_excerpts: false # set to true to show excerpts on the homepage
 
 # Minima date format
@@ -58,8 +51,8 @@ minima:
 # - about.md
 
 # Build settings
-theme: minima
 
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+ - jekyll-money
